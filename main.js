@@ -41,10 +41,10 @@ if (typeof element === 'number') {
   } else {
     console.log(element + ' is neither a number nor a string');
   }
-}
 if (element === NaN) {console.log("Nan")}
 if (element === string) {console.log("String")}
 }
+
   console.log(checkDatatypes(null))
   // * Boolean
   // * Null
@@ -83,20 +83,24 @@ console.log(trueTwo(x, y, z));
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
-function runWhenTrue(condition1, condition2) {
-  if (condition1 || condition2) {
+  if (condition1 === true || condition2 === true) {
       console.log("One of the conditions is true. Running the program.");
   } else {
       console.log("Neither condition is true. The program will not run.");
   }
-}
 let condition1 = true;
 let condition2 = false;
 
 
 // Write a JavaScript program that runs when both things are not true. 
 
-
+if (condition1 === false && condition2 === false) {
+  console.log("Neither condition is true. Running the program.");
+} else {
+  console.log("One of the conditions is true. The program will not run.");
+}
+let condition1 = false;
+let condition2 = false;
 
 
 
